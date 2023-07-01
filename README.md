@@ -1,4 +1,4 @@
-#  <img src="  https://www.python.org/static/img/python-logo.png" alt="Python">
+<img src="  https://www.python.org/static/img/python-logo.png" alt="Python">
 
 ## Nesse repositorio o desafio é de executar mais de 100 exercicios do curso de python proposto pelo professor Gustavo Guanabara, curso esse disponibilizado pelo youtube e atraves de sua plataforma "curso em video".
 
