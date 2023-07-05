@@ -4,4 +4,5 @@
 city = str(input("Digite uam cidade - ")).strip()
 
 
-print(city[0:5].lower() == "santo")
+if city[0:5].lower() == "santo":
+    print("Essa cidade começa com SANTO")
