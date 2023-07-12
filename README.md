@@ -18,6 +18,8 @@
   - Tipos primitivos
   - Operadores aritimenticos
   - Condicionais
+  - Metodos de String
+ 
 
   <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="youtube">
