@@ -4,11 +4,6 @@
 
 
 
-  <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="youtube">
-  </a>
-
-
   <a href="https://www.cursoemvideo.com/curso/python-3-mundo-1/" target="_blank">
     <img 
     src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo.png" 
@@ -17,4 +12,16 @@
     width="200"
     >
   </a>
+
+  ### Modulo 1 
+  - 35 exercicios
+  - Tipos primitivos
+  - Operadores aritimenticos
+  - Condicionais
+
+  <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="youtube">
+  </a>
+
+
 
