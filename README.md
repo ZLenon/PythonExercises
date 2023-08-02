@@ -9,7 +9,7 @@
     src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo.png" 
     alt="curso em video"
     height="90"
-    width="200"
+    width="170"
     >
   </a>
 
@@ -19,6 +19,11 @@
   - Operadores aritimenticos
   - Condicionais
   - Metodos de String
+
+  ### Modulo 2
+  - 36 exercicios
+  - Estruturas condicionais
+  - Aninhamentos
  
 
   <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-" target="_blank">
