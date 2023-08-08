@@ -13,6 +13,14 @@
     >
   </a>
 
+  - Comando para criar o ambiente virtual pasta /.venv
+ `python3 -m venv .venv`
+ - Comando para subir o ambiente virtual 
+ `source .venv/bin/activate`
+ obs: No lado esquerdo do nome do terminal vai aparecer escrito (.venv)
+  - Para executar um arquivo qualquer escreva o seguinte comando, substituindo o numero de acordo com o exercicio a ser execultado
+  `python3 -i Modulo\ 2/exercicio51/exercicio51.py `
+
   ### Modulo 1 
   - 35 exercicios
   - Tipos primitivos
