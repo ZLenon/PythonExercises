@@ -32,6 +32,7 @@
   - 36 exercicios
   - Estruturas condicionais
   - Aninhamentos
+  - Metodos de repeticção
  
 
   <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-" target="_blank">
