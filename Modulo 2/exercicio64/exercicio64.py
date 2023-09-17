@@ -5,8 +5,8 @@
 
 num = int(input("Digite um numero ou [999] para parar: "))
 total = []
-tamanho = 0
-soma = 0
+tamanho = soma = 0
+
 
 while num != 999:
     total.append(num)
