@@ -3,23 +3,25 @@
 # ao usuario se ele quer ou não continuar apos cada valor digitado
 
 menor = maior = media = tamanho = soma = 0
-yes = "S"
+resposta = "S"
 
-while yes in "Ss":
+while resposta in "Ss":
     num = int(input("Digite um numero: "))
-    soma += num
     tamanho += 1
+    soma += num
+    media = soma / tamanho
     if tamanho == 1:
-        maior = menor = num
+        maior = num
+        menor = num
     else:
         if num > maior:
             maior = num
-        elif num < menor:
+        if num < menor:
             menor = num
-    yes = str(input("Quer continuar? [S/N] ")).upper().strip()[0]
-media = soma / tamanho
-print(
-    "Voce digitou {}, a media foi {}, o maior é {}, o menor foi {}".format(
-        tamanho, media, maior, menor
-    )
-)
+    resposta = str(input("Quer continuar [S/N]: ")).upper().strip()
+print("=" * 16)
+print("Voce digitou {} numeros".format(tamanho))
+print("A soma de todos os numeros é {}".format(soma))
+print("A media dos numeros é {}".format(media))
+print("O numero maior é {}".format(maior))
+print("O numero menor é {}".format(menor))
