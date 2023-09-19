@@ -2,29 +2,25 @@
 # jogador perder, mostrando o total de vitorias que ele conquistou
 from random import randint
 
-vitoria = 0
+print("=" * 16)
+print("GAME DE PAR ou IMPAR")
+print("=" * 16)
+total = vitoria = 0
+
 while True:
-    player = int(input("Digite um numero: "))
+    jogador = int(input("Digite um numero: "))
     cpu = randint(0, 11)
-    total = cpu + player
-    par_impar = " "
-    while par_impar not in "pPIi":
-        par_impar = str(input("Par ou Impar?")).strip().upper()[0]
-    msg = f"Você jogou {player} e o CPU jogou {cpu} a soma é {total} "
-    msg += "PAR" if total % 2 == 0 else "IMPAR"
-    print(msg)
-    if par_impar == "P":
-        if total % 2 == 0:
-            print("Vitoria!")
-            vitoria += 1
-        else:
-            print("Derrota!")
-            break
-    if par_impar == "I":
-        if total % 2 == 1:
-            print("Vitoria!")
-            vitoria += 1
-        else:
-            print("Derrota!")
-            break
-print(f"Voce venceu {vitoria} vezes")
+    total = cpu + jogador
+    par_impar = "PAR" if total % 2 == 0 else "IMPAR"
+    opcao = str(input("Escolha PAR ou IMPAR - [P/I] - ")).upper().strip()[0]
+    print(f"CPU-{cpu} Jogador-{jogador} -> {total} é {par_impar}")
+    if opcao in par_impar:
+        vitoria += 1
+        print("Venceu!!!")
+    else:
+        print("Derrota, FIM de jogo!!!")
+        print("=" * 16)
+        break
+    print("=" * 16)
+
+print(f"Total de vitorias nessa rodada - {vitoria}")
