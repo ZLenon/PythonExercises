@@ -35,6 +35,7 @@
   - Metodos de repeticção
  
   ### Modulo 3
+  - 42 exercicios
   - Tuplas
   - Dicionarios
   - Listas
