@@ -8,7 +8,7 @@ pessoa = dict()
 media = 0
 end = ""
 
-while end in "S":
+while True:
     pessoa["name"] = str(input("Nome: ")).capitalize().strip()
 
     pessoa["idade"] = int(input("Idade: "))
@@ -24,11 +24,14 @@ while end in "S":
 
     pessoa_copy = pessoa.copy()
     db.append(pessoa_copy)
+
     while True:
         end = str(input("Quer continuar [S/N]: ")).upper()[0]
         if end in "SN":
             break
         print("Erro! Responda apenas S ou N")
+    if end in "N":
+        break
 
     print("~" * 30)
 
