@@ -13,31 +13,31 @@ while end in "S":
 
     pessoa["idade"] = int(input("Idade: "))
     media += pessoa["idade"]
-
-    pessoa["sexo"] = str(input("[M/F]: ")).upper()[0]
-    if pessoa["sexo"] in "MF":
-        break
-    print("ERRO! Por favor digite apenas M ou F")
+    while True:
+        pessoa["sexo"] = str(input("[M/F]: ")).upper()[0]
+        if pessoa["sexo"] in "MF":
+            break
+        print("ERRO! Por favor digite apenas M ou F")
 
     if pessoa["sexo"] in "F":
         woman.append(pessoa["name"])
 
     pessoa_copy = pessoa.copy()
     db.append(pessoa_copy)
-
-    end = str(input("Quer continuar [S/N]: ")).upper()[0]
-    if end in "SN":
-        break
-    print("Erro! Responda apenas S ou N")
+    while True:
+        end = str(input("Quer continuar [S/N]: ")).upper()[0]
+        if end in "SN":
+            break
+        print("Erro! Responda apenas S ou N")
 
     print("~" * 30)
 
 
 print("-=" * 25)
 print(f"A) Ao todo tem {len(db)} cadastrados.")
-print(f"B) A media de idada {media / len(db):2f} anos")
+print(f"B) A media de idade {media / len(db):5.2f} anos")
 print(f"C) As mulheres cadastradas sao {[x for x in woman]}")
-print("D) A lista de pessoas acima da media:")
+print("D) A lista de pessoas com idade acima da media:")
 for x in db:
     if x["idade"] > media / len(db):
         print(f"nome = {x['name']}; sexo = {x['sexo']}; idade = {x['idade']}")
