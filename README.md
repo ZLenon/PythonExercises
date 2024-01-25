@@ -18,6 +18,7 @@
  - Comando para subir o ambiente virtual 
  `source .venv/bin/activate`
  obs: No lado esquerdo do nome do terminal vai aparecer escrito (.venv)
+ `python3 -m pip install -r dependencias.txt`
   - Para executar um arquivo qualquer escreva o seguinte comando, substituindo o numero de acordo com o exercicio a ser execultado
   `python3 -i Modulo\ 2/exercicio51/exercicio51.py `
 

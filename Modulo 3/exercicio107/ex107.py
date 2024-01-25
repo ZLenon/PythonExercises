@@ -5,7 +5,7 @@ def aumentar(num):
 
 def diminuir(num):
     result = num * 0.13
-    return result - num
+    return num - result
 
 
 def dobro(num):
