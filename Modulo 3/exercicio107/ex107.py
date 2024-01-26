@@ -1,15 +1,15 @@
-def aumentar(num):
-    result = num * 0.10
+def juros(num, percent):
+    result = num * (percent / 100)
     return result + num
 
 
-def diminuir(num):
-    result = num * 0.13
+def desconto(num, percent):
+    result = num * (percent / 100)
     return num - result
 
 
 def dobro(num):
-    return num * num
+    return num * 2
 
 
 def metade(num):

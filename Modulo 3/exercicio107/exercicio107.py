@@ -3,12 +3,13 @@ import ex107
 
 num = int(input("Digite um preço: "))
 
-aumentado = ex107.aumentar(num)
+
+juros = ex107.juros(num, 10)
 dobro = ex107.dobro(num)
 metade = ex107.metade(num)
-reduz = ex107.diminuir(num)
+desconto = ex107.desconto(num, 13)
 
 print(f"A metade de {num} é {metade}")
 print(f"O dobro de {num} é {dobro}")
-print(f"Aumentado de 10%, temos {aumentado}")
-print(f"Reduzindo 13%, temos {reduz}")
+print(f"Aumento de 10%, temos {juros}")
+print(f"Desconto de 13%, temos {desconto}")
