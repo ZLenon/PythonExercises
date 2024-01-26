@@ -12,15 +12,38 @@
     width="170"
     >
   </a>
+<details>
+  <summary><strong>🏕️ Ambiente Virtual</strong></summary><br />
 
-  - Comando para criar o ambiente virtual pasta /.venv
- `python3 -m venv .venv`
- - Comando para subir o ambiente virtual 
- `source .venv/bin/activate`
- obs: No lado esquerdo do nome do terminal vai aparecer escrito (.venv)
- `python3 -m pip install -r dependencias.txt`
-  - Para executar um arquivo qualquer escreva o seguinte comando, substituindo o numero de acordo com o exercicio a ser execultado
+O Python oferece um recurso chamado de ambiente virtual, que permite sua máquina rodar sem conflitos diferentes tipos de projetos com diferentes versões de bibliotecas.
+
+1. Criar o ambiente virtual
+
+```bash
+python3 -m venv .venv
+```
+
+2. Ativar o ambiente virtual
+
+```bash
+source .venv/bin/activate
+```
+obs: No lado esquerdo do nome do terminal vai aparecer escrito (.venv)
+
+3. Instalar as dependências no ambiente virtual
+
+```bash
+python3 -m pip install -r dependencias.txt
+```
+
+Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
+Quando precisar desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativar novamente quando voltar a trabalhar no projeto. 
+Para executar um arquivo qualquer escreva o seguinte comando, substituindo o numero de acordo com o exercicio a ser execultado
   `python3 -i Modulo\ 2/exercicio51/exercicio51.py `
+
+O arquivo `dependencias.txt` contém todas as dependências que serão utilizadas no projeto, ele está agindo como se fosse um `package.json` de um projeto `Node.js`.
+
+</details>
 
   ### Modulo 1 
   - 35 exercicios
