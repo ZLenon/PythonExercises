@@ -3,20 +3,30 @@
 import requests
 
 
-def site_online(url):
+def get_data_info():
     try:
+        url = f"https://api.ragnaplace.com/ro/list/mob?server=bro&type=server&categorie=all&order=id&sort=desc&page=1&limit=5&search="
         response = requests.get(url)
         if response.status_code == 200:
-            return True
-        else:
-            return False
+            data = response.json()
+        for valor in enumerate(dict(data).values()):
+            if isinstance(valor[1], list):
+                for info in valor[1]:
+                    show_moster(info)
+            else:
+                break
     except requests.ConnectionError:
-        return False
+        return []
 
 
-num = 100
-url = f"https://api.ragnaplace.com/ro/list/mob?server=bro&type=server&categorie=all&order=id&sort=asc&page=1&limit=3&search="
-if site_online(url):
-    print("O site esta ONLINE")
-else:
-    print("O site esta OFFLINE")
+def show_moster(info):
+    print("Monster".center(25))
+    print("ID:", f'\t{info["id"]}')
+    print("Nome:", f'\t{info["name"]}')
+    print("Level:", f'\t{info["lv"]}')
+    print("Vida:", f'\t{info["hp"]}')
+    print("Raça:", f'\t{info["race"]}')
+    print("-=" * 10)
+
+
+get_data_info()
