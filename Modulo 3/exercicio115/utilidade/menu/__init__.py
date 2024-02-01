@@ -8,8 +8,8 @@ def leia_int(param):
             return inteiro
 
 
-def option_menu(param):
-    valor = int(input(param))
+def option_menu():
+    valor = leia_int("Opção: ")
     if valor == 1:
         print("Opção 1")
     elif valor == 2:
@@ -19,9 +19,19 @@ def option_menu(param):
         print("Ate logo!")
 
 
-def show_menu():
-    print("¨¨" * 40)
-    print("1 - Ver pessoas cadastradas")
-    print("2 - Cadastrar nova pessoa")
-    print("3 - Sair do sistema")
-    print("¨¨" * 40)
+def traces_print(param=30):
+    print("=" * param)
+
+
+def show_menu(args=list):
+    traces_print()
+    print("MENU".center(25))
+    traces_print()
+    count = 0
+    while True:
+        print(f"\033[93m{count + 1}\033[m", " - ", f"\033[94m{args[count]}\033[m")
+        count += 1
+        if count >= len(args):
+            break
+    traces_print()
+    option_menu()
