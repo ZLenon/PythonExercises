@@ -1,0 +1,5 @@
+print("\033[91mTexto em vermelho\033[0m")
+print("\033[92mTexto em verde\033[0m")
+print("\033[93mTexto em amarelo\033[0m")
+print("\033[94mTexto em azul\033[0m")
+print("\033[95mTexto em roxo\033[0m")

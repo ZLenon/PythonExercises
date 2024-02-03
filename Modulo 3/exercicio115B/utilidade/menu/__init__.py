@@ -1,3 +1,6 @@
+from utilidade import arquivo
+
+
 def leia_int(param):
     while True:
         try:
@@ -9,14 +12,29 @@ def leia_int(param):
 
 
 def option_menu():
-    valor = leia_int("Opção: ")
-    if valor == 1:
-        print("Opção 1")
-    elif valor == 2:
-        print("Opção 2")
-    else:
-        print("Saindo do sistema...", flush=True, end=" ")
-        print("Ate logo!")
+    while True:
+        valor = leia_int("Opção: ")
+
+        traces_print()
+        if valor == 1:
+            while True:
+                print(arquivo.leitura())
+                traces_print()
+                sair = input("Quer continuar [S/N]? ").strip().upper()[0]
+                if sair == "N":
+                    break
+        elif valor == 2:
+            while True:
+                nome = input("Nome: ").strip().capitalize()
+                idade = input("Idade: ").strip()
+                arquivo.escrita(f"Nome: {nome} - Idade: {idade};")
+                sair = input("Quer continuar [S/N]? ").strip().upper()[0]
+                if sair == "N":
+                    break
+        else:
+            print("Saindo do sistema...", flush=True, end=" ")
+            print("Ate logo!")
+            break
 
 
 def traces_print(param=30):
@@ -24,6 +42,7 @@ def traces_print(param=30):
 
 
 def show_menu(args=list):
+    arquivo.is_verify()
     traces_print()
     print("MENU".center(25))
     traces_print()
