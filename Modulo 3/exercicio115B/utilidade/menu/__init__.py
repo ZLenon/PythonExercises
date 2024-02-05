@@ -17,12 +17,8 @@ def option_menu():
 
         traces_print()
         if valor == 1:
-            while True:
-                print(arquivo.leitura())
-                traces_print()
-                sair = input("Quer continuar [S/N]? ").strip().upper()[0]
-                if sair == "N":
-                    break
+            print(arquivo.leitura())
+            traces_print()
         elif valor == 2:
             while True:
                 nome = input("Nome: ").strip().capitalize()
