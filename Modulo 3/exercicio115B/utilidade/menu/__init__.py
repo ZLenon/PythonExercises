@@ -11,14 +11,15 @@ def leia_int(param):
             return inteiro
 
 
-def option_menu():
+def option_menu(param):
     while True:
-        valor = leia_int("Opção: ")
+        show_menu(param)
+        valor = leia_int("\033[95mOpção: \033[m")
 
         traces_print()
         if valor == 1:
             print(arquivo.leitura())
-            traces_print()
+
         elif valor == 2:
             while True:
                 nome = input("Nome: ").strip().capitalize()
@@ -27,10 +28,12 @@ def option_menu():
                 sair = input("Quer continuar [S/N]? ").strip().upper()[0]
                 if sair == "N":
                     break
-        else:
+        elif valor == 3:
             print("Saindo do sistema...", flush=True, end=" ")
             print("Ate logo!")
             break
+        else:
+            print("Opção invalida")
 
 
 def traces_print(param=30):
@@ -49,4 +52,3 @@ def show_menu(args=list):
         if count >= len(args):
             break
     traces_print()
-    option_menu()

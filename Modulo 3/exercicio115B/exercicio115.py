@@ -3,4 +3,4 @@
 from utilidade import *
 
 
-menu.show_menu(["Exibir", "Cadastrar", "Sair"])
+menu.option_menu(["Exibir", "Cadastrar", "Sair"])
