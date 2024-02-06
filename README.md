@@ -72,5 +72,17 @@ O arquivo `dependencias.txt` contém todas as dependências que serão utilizada
     <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="youtube">
   </a>
 
+  ### Modulo 4
+  - Livro Automatize_tarefas_maçantes
+
+
+<a href="https://www.cursoemvideo.com/curso/python-3-mundo-1/" target="_blank">
+  <img 
+  src="https://m.media-amazon.com/images/I/71zPRhJogqL._SY385_.jpg" 
+  alt="curso em video"
+  height="200"  
+  >
+</a>
+  
 
 
