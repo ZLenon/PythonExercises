@@ -1,4 +1,4 @@
-# pagina 126
+# pagina 157
 
 
 def lista_compras(lista=list):
