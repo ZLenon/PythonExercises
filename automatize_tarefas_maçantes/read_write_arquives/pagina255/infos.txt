@@ -1,0 +1,14 @@
+pista,New Delhi,
+diferença composto, 0.642s,
+melhor desempenho parou na volta, 23,
+campeao parou na volta, 16,
+asa dianteira, 0, asa traseira, 195.
+
+pista,Yeongam GP ,
+diferença composto, 0.668,
+volta, 14, 53l,
+volta, 19, 71l,
+volta, 28, 105l,
+melhor desempenho parou na volta, 20,
+campeao parou na volta, 20,
+asa dianteira, 60, asa traseira, 0.
