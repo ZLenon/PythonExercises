@@ -53,6 +53,7 @@ capitals = {
     "Wyoming": "Cheyenne",
 }
 
+
 path = "./automatize_tarefas_maçantes/projetos/pagina262/"
 
 for quizNum in range(35):
@@ -67,6 +68,7 @@ for quizNum in range(35):
     # Embaralha a ordem dos estados.
     states = list(capitals.keys())
     random.shuffle(states)
+
     for questionNum in range(50):
         # Obtém respostas corretas e incorretas.
         correctAnswer = capitals[states[questionNum]]
@@ -75,3 +77,19 @@ for quizNum in range(35):
         wrongAnswers = random.sample(wrongAnswers, 3)
         answerOptions = wrongAnswers + [correctAnswer]
         random.shuffle(answerOptions)
+
+        # Grava a pergunta e as opções de resposta no arquivo de prova.
+        quizFile.write(
+            "%s. Qual a capital do %s?\n" % (questionNum + 1, states[questionNum])
+        )
+        for i in range(4):
+            quizFile.write(" %s. %s\n" % ("ABCD"[i], answerOptions[i]))
+            quizFile.write("\n")
+            # Grava o gabarito com as respostas em um arquivo.
+            answerKeyFile.write(
+                "%s. %s\n"
+                % (questionNum + 1, "ABCD"[answerOptions.index(correctAnswer)])
+            )
+
+    quizFile.close()
+    answerKeyFile.close()
