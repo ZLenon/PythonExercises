@@ -64,14 +64,14 @@ for quizNum in range(35):
     quizFile.write((" " * 20) + "State Capitals Quiz (Form %s)" % (quizNum + 1))
     quizFile.write("\n\n")
 
-# Embaralha a ordem dos estados.
-states = list(capitals.keys())
-random.shuffle(states)
-for questionNum in range(50):
-    # Obtém respostas corretas e incorretas.
-    correctAnswer = capitals[states[questionNum]]
-    wrongAnswers = list(capitals.values())
-    del wrongAnswers[wrongAnswers.index(correctAnswer)]
-    wrongAnswers = random.sample(wrongAnswers, 3)
-    answerOptions = wrongAnswers + [correctAnswer]
-    random.shuffle(answerOptions)
+    # Embaralha a ordem dos estados.
+    states = list(capitals.keys())
+    random.shuffle(states)
+    for questionNum in range(50):
+        # Obtém respostas corretas e incorretas.
+        correctAnswer = capitals[states[questionNum]]
+        wrongAnswers = list(capitals.values())
+        del wrongAnswers[wrongAnswers.index(correctAnswer)]
+        wrongAnswers = random.sample(wrongAnswers, 3)
+        answerOptions = wrongAnswers + [correctAnswer]
+        random.shuffle(answerOptions)
