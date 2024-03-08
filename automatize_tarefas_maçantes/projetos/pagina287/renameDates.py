@@ -27,10 +27,11 @@ for file_name in os.listdir(path):
     print("Mes: ", monthPart)
     print("Dia: ", dayPart)
     print("Ano: ", yearPart)
+    # Renomeando ao padrao europeu
     euroFilename = beforePart + dayPart + "-" + monthPart + "-" + yearPart + afterPart
     print("Nome padrão EUA: ", euroFilename)
 
-    path_absolute = os.path.abspath(".")
+    # Caminho dos arquivos que serao mudados o nomes
     old_dir_name = os.path.join(path, file_name)
     new_dir_name = os.path.join(path, euroFilename)
     print("Caminho: ", new_dir_name)
