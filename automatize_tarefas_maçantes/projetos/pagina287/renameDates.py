@@ -29,8 +29,10 @@ for file_name in os.listdir(path):
     print("Ano: ", yearPart)
     euroFilename = beforePart + dayPart + "-" + monthPart + "-" + yearPart + afterPart
     print("Nome padrão EUA: ", euroFilename)
-    absWorkingDir = os.path.abspath(".")
-    amerFilename = os.path.join(absWorkingDir, euroFilename)
-    print("Caminho: ", amerFilename)
-    os.rename(file_name, euroFilename)
+
+    path_absolute = os.path.abspath(".")
+    old_dir_name = os.path.join(path, file_name)
+    new_dir_name = os.path.join(path, euroFilename)
+    print("Caminho: ", new_dir_name)
+    os.rename(old_dir_name, new_dir_name)
     print("=*" * 20)
