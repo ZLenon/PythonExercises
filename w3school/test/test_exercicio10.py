@@ -24,13 +24,20 @@ def test_count():
   # retorna o numero de vezes de uma ocorrencia em uma string
   assert metodo == 5
 
-def string_endswith():
+def test_endswith():
   classe = exercicio10.Metodos_String("www.google.com")
   metodo = classe.string_endswith('.com')
   # retorna boleano
   assert metodo == True
 
-def string_expandtabs():
+def test_expandtabs():
   classe = exercicio10.Metodos_String('L\te\tn\to\tn')
-  metodo = classe.string_expandtabs()
-  assert metodo == 'Lenon'
+  metodo = classe.string_expandtabs(2)
+  # cria um espaço quando for usado o \t de tabulação
+  assert metodo == 'L e n o n'
+
+def test_find():
+  classe = exercicio10.Metodos_String('Ordem e Progresso')
+  metodo = classe.string_find('Progresso')
+  # retorn o index inicial da string informada, case sensitive
+   assert metodo == 8
