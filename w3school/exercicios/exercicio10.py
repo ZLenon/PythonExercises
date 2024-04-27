@@ -1,5 +1,5 @@
 class Metodos_String:
-  def __init__(self, atributo_instancia):
+  def __init__(self, atributo_instancia: str):
     self.atributo_instancia = atributo_instancia  # Atributo de instância
 
   def string_capitalize(self)->str:
@@ -23,7 +23,8 @@ class Metodos_String:
   def string_find(self,string:str)->int:
     return self.atributo_instancia.find(string)
 
-
-
-
-
+  def string_format(self,string:str)->str:
+    return f"{self.atributo_instancia}{string}".format(string)
+  
+  def string_format_map(self,string:dict):
+    return f"{self.atributo_instancia} ".format_map(string)

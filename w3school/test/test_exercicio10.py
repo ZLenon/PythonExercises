@@ -40,4 +40,14 @@ def test_find():
   classe = exercicio10.Metodos_String('Ordem e Progresso')
   metodo = classe.string_find('Progresso')
   # retorn o index inicial da string informada, case sensitive
-   assert metodo == 8
+  assert metodo == 8
+
+def test_format():
+  classe = exercicio10.Metodos_String("Meu nome é: ")
+  metodo = classe.string_format("Lenon")
+  assert metodo == "Meu nome é: Lenon"
+
+def test_format_map():
+  classe = exercicio10.Metodos_String("")
+  metodo = classe.string_format_map({'nome': 'João', 'idade': 30})
+  assert metodo == 'Alo'
