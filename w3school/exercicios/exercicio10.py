@@ -26,5 +26,14 @@ class Metodos_String:
   def string_format(self,string:str)->str:
     return f"{self.atributo_instancia}{string}".format(string)
   
-  def string_format_map(self,string:dict):
-    return f"{self.atributo_instancia} ".format_map(string)
+  def string_format_map(self,dicio:dict)->str:
+    return f"{self.atributo_instancia}".format_map(dicio)
+  
+  def string_index(self,string:str)->int:
+    return self.atributo_instancia.index(string)
+  
+  def string_isalnum(self)->bool:
+    return self.atributo_instancia.isalnum()
+  
+  def string_isalpha(self)->bool:
+    return self.atributo_instancia.isalpha()

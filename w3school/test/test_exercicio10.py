@@ -48,6 +48,23 @@ def test_format():
   assert metodo == "Meu nome é: Lenon"
 
 def test_format_map():
-  classe = exercicio10.Metodos_String("")
-  metodo = classe.string_format_map({'nome': 'João', 'idade': 30})
-  assert metodo == 'Alo'
+  classe = exercicio10.Metodos_String('Olá, meu nome é {nome} e tenho {idade} anos.')
+  metodo = classe.string_format_map({'nome': 'Lenon', 'idade': 34})
+  assert metodo == 'Olá, meu nome é Lenon e tenho 34 anos.'
+
+def test_index():
+  classe = exercicio10.Metodos_String('LenonNascimentoCardoso')
+  metodo = classe.string_index('Nasci')
+  assert metodo == 5
+
+def test_isalnum():
+  classe = exercicio10.Metodos_String('Lenon2024')
+  metodo = classe.string_isalnum()
+  # Retorna verdadeiro se todos os caracters da string forem Alfanumericos
+  assert metodo == True
+
+def test_isalpha():
+  classe = exercicio10.Metodos_String('Nascimento')
+  metodo = classe.string_isalpha()
+  # Retorna verdadeiro se todos os caracter forem letras
+  assert metodo == True
