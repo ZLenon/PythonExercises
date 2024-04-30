@@ -37,3 +37,12 @@ class Metodos_String:
   
   def string_isalpha(self)->bool:
     return self.atributo_instancia.isalpha()
+  
+  def string_isascii(self)->bool:
+    return self.atributo_instancia.isascii()
+  
+  def string_isdecimal(self)->bool:
+    return self.atributo_instancia.isdecimal()
+  
+  def string_isdigit(self)->bool:
+    return self.atributo_instancia.isdigit()

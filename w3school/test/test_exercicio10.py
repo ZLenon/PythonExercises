@@ -68,3 +68,21 @@ def test_isalpha():
   metodo = classe.string_isalpha()
   # Retorna verdadeiro se todos os caracter forem letras
   assert metodo == True
+
+def test_isascii():
+  classe = exercicio10.Metodos_String('abc123#$%')
+  metodo = classe.string_isascii()
+  # Retorna verdadeiro se todos os caracters forem ascii
+  assert metodo == True
+
+def test_isdecimal():
+  classe = exercicio10.Metodos_String("987654231")
+  metodo = classe.string_isdecimal()
+  # Retorna verdadeiro se os caracters forem numerais
+  assert metodo == True
+
+def test_isdigit():
+  classe = exercicio10.Metodos_String('  ')
+  metodo = classe.string_isdigit()
+  # Retorna verdadeiro se nao houver caracters nulos
+  assert metodo == False
