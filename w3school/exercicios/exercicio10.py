@@ -46,3 +46,12 @@ class Metodos_String:
   
   def string_isdigit(self)->bool:
     return self.atributo_instancia.isdigit()
+  
+  def string_isidentifier(self)->bool:
+    return self.atributo_instancia.isidentifier()
+  
+  def string_islower(self)->bool:
+    return self.atributo_instancia.islower()
+  
+  def string_isnumeric(self)->bool:
+    return self.atributo_instancia.isnumeric()

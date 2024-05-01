@@ -86,3 +86,21 @@ def test_isdigit():
   metodo = classe.string_isdigit()
   # Retorna verdadeiro se nao houver caracters nulos
   assert metodo == False
+
+def test_isidentifier():
+  classe = exercicio10.Metodos_String('abc123')
+  metodo = classe.string_isidentifier()
+  # Válido se contiver apenas letras alfanuméricas (az) e (0-9) ou sublinhados (_). Um identificador válido não pode começar com um número ou conter espaços.
+  assert metodo == True
+
+def test_islower():
+  classe = exercicio10.Metodos_String('abcdfg')
+  metodo = classe.string_islower()
+  # confere se as letras estao em lowercase
+  assert metodo == True
+
+def test_isnumeric():
+  classe = exercicio10.Metodos_String('98754321')
+  metodo = classe.string_isnumeric()
+  # Retorna verdadeiro se todos caracters forem numeros
+  assert metodo == True
