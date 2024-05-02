@@ -55,3 +55,18 @@ class Metodos_String:
   
   def string_isnumeric(self)->bool:
     return self.atributo_instancia.isnumeric()
+
+  def string_isprintable(self)->bool:
+    return self.atributo_instancia.isprintable()
+  
+  def string_isspace(self)->bool:
+    return self.atributo_instancia.isspace()
+  
+  def string_istitle(self)->bool:
+    return self.atributo_instancia.istitle()
+  
+  def string_isupper(self)->bool:
+    return self.atributo_instancia.isupper()
+  
+  def string_join(self,string:tuple[str])->str:
+    return self.atributo_instancia.join(string)

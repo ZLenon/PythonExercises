@@ -104,3 +104,33 @@ def test_isnumeric():
   metodo = classe.string_isnumeric()
   # Retorna verdadeiro se todos caracters forem numeros
   assert metodo == True
+
+def test_isprintable():
+  classe = exercicio10.Metodos_String('teste123')
+  metodo = classe.string_isprintable()
+  # método retorna True se todos os caracteres puderem ser impressos, caso contrário, False.
+  assert metodo == True
+
+def test_isspace():
+  classe = exercicio10.Metodos_String("  $  ")
+  metodo = classe.string_isspace()
+  # retorna true se todos os caracters forem espaço
+  assert metodo == False
+
+def test_istitle():
+  classe = exercicio10.Metodos_String('Lenon Nascimento')
+  metodo = classe.string_istitle()
+  # Retorna verdadeiro se todas as palavras começar com maiusculo
+  assert metodo == True
+
+def test_isupper():
+  classe = exercicio10.Metodos_String('TESTANDO')
+  metodo = classe.string_isupper()
+  # Retorna verdadeiro se todas as letras forem maiuscula
+  assert metodo == True
+
+def test_join():
+  classe = exercicio10.Metodos_String('-')
+  metodo = classe.string_join(('Lenon','Nascimento','Cardoso'))
+  # método pega todos os itens em um iterável e os une em uma string.
+  assert metodo == 'Lenon-Nascimento-Cardoso'
