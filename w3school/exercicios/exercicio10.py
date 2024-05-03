@@ -70,3 +70,12 @@ class Metodos_String:
   
   def string_join(self,string:tuple[str])->str:
     return self.atributo_instancia.join(string)
+  
+  def string_ljust(self, num:int)->str:
+    return self.atributo_instancia.ljust(num)
+  
+  def string_lower(self)->str:
+    return self.atributo_instancia.lower()
+  
+  def string_lstrip(self,caracter:str)->str:
+    return self.atributo_instancia.lstrip(caracter)

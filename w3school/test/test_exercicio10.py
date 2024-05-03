@@ -134,3 +134,19 @@ def test_join():
   metodo = classe.string_join(('Lenon','Nascimento','Cardoso'))
   # método pega todos os itens em um iterável e os une em uma string.
   assert metodo == 'Lenon-Nascimento-Cardoso'
+
+def test_ljust():
+  classe = exercicio10.Metodos_String('Lenon')
+  metodo = classe.string_ljust(10)
+  # Retorne uma versão justificada à esquerda com x caracter da palavra
+  assert metodo == 'Lenon     '
+
+def test_lower():
+  classe = exercicio10.Metodos_String("CAPSLOCK")
+  metodo = classe.string_lower()
+  assert metodo == 'capslock'
+
+def test_lstrip():
+  classe = exercicio10.Metodos_String("!@#$%¨&*Lenon")
+  metodo = classe.string_lstrip("&*¨%#@!$")
+  assert metodo == "Lenon"
