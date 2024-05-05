@@ -150,3 +150,20 @@ def test_lstrip():
   classe = exercicio10.Metodos_String("!@#$%¨&*Lenon")
   metodo = classe.string_lstrip("&*¨%#@!$")
   assert metodo == "Lenon"
+
+def test_maketrans():
+  classe = exercicio10.Metodos_String("  $ENHATest  ")
+  metodo = classe.string_maketrans('$Test','S    '," ")
+  # retorna uma tabela de mapeamento que pode ser usada com o método para substituir caracteres especificados
+  assert metodo == 'SENHA    '
+
+def test_partition():
+  classe = exercicio10.Metodos_String("Nascimento Cardoso")
+  metodo = classe.string_partition('cimento')
+  # procura uma string especificada e divide a string em uma tupla contendo três elementos. O primeiro elemento contém a parte antes da string especificada. O segundo elemento contém a string especificada. O terceiro elemento contém a parte após a string.
+  assert metodo == ('Nas', 'cimento', ' Cardoso')
+
+def test_replace():
+  classe = exercicio10.Metodos_String('o pato poeu a popa do rei de roma')
+  metodo = classe.string_replace('p','r',3)
+  assert metodo == "o rato roeu a ropa do rei de roma"

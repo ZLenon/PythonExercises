@@ -79,3 +79,13 @@ class Metodos_String:
   
   def string_lstrip(self,caracter:str)->str:
     return self.atributo_instancia.lstrip(caracter)
+  
+  def string_maketrans(self,char1:str,char2:str,char3:str = "")->str:
+    tabela_map = str.maketrans(char1,char2,char3)
+    return self.atributo_instancia.translate(tabela_map)
+  
+  def string_partition(self, string:str)->tuple:
+    return self.atributo_instancia.partition(string)
+  
+  def string_replace(self, string1:str,string2:str,count:int=0)->str:
+    return self.atributo_instancia.replace(string1,string2,count)
